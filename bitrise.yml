@@ -1,0 +1,24 @@
+format_version: 4
+default_step_lib_source: https://github.com/bitrise-io/bitrise-steplib.git
+
+app:
+  envs:
+    - DOPPLER_TOKEN: $DOPPLER_TOKEN
+    - DOPPLER_PROJECT: $DOPPLER_PROJECT
+    - DOPPLER_CONFIG: $DOPPLER_CONFIG
+
+workflows:
+  test:
+    steps:
+      - script:
+          inputs:
+            - content: |
+                #!/bin/bash
+                echo "Testing Doppler Bitrise Step."
+      - path::./:
+          title: Doppler Step Test
+          description: Test the Doppler step with required inputs.
+          inputs:
+            - DOPPLER_TOKEN: $DOPPLER_TOKEN
+            - DOPPLER_PROJECT: $DOPPLER_PROJECT
+            - DOPPLER_CONFIG: $DOPPLER_CONFIG

@@ -27,16 +27,18 @@ inputs:
   - DOPPLER_PROJECT: "$DOPPLER_PROJECT"
     opts:
       title: "Doppler Project"
-      summary: "Doppler project name."
+      summary: "Doppler project name (optional, but recommended)."
       description: |
         The name of the Doppler project from which to fetch secrets. Example: `serbus-mobile`.
+        If not set, Doppler will use the default project associated with the token.
       is_expand: true
-      is_required: true
+      is_required: false
   - DOPPLER_CONFIG: "$DOPPLER_CONFIG"
     opts:
       title: "Doppler Config"
-      summary: "Doppler config/environment name."
+      summary: "Doppler config/environment name (optional, but recommended)."
       description: |
         The Doppler config (environment) to use when fetching secrets. Example: `prd`.
+        If not set, Doppler will use the default config associated with the token.
       is_expand: true
-      is_required: true
+      is_required: false

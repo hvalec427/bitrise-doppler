@@ -7,6 +7,7 @@ description: |
 website: https://github.com/hvalec427/bitrise-doppler
 source_code_url: https://github.com/hvalec427/bitrise-doppler
 support_url: https://github.com/hvalec427/bitrise-doppler/issues
+icon: ./icon.png
 
 type_tags:
   - utility

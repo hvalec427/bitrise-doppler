@@ -15,7 +15,7 @@ Example step configuration in your `bitrise.yml`:
 - git::https://github.com/hvalec427/bitrise-doppler.git@master:
       title: Fetch env from doppler
       inputs:
-      - DOPPLER_TOKEN: "$DOPPLER_TOKEN_PROD"
+      - DOPPLER_TOKEN: "$DOPPLER_TOKEN"
 ```
 
 ### What this step does
